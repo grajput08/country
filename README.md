@@ -126,5 +126,4 @@ That's it! You've successfully installed MongoDB, connected to it via the shell,
 
 For more information and advanced MongoDB features, refer to the [official MongoDB documentation.](https://www.mongodb.com/docs/)
 
-# [Link to Postman Documentation](https://documenter.getpostman.com/view/17136337/2s9YJaYj18)
-# country
+# [Link to Postman Documentation](https://documenter.getpostman.com/view/17136337/2s9YJdX3Gz)
