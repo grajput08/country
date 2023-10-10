@@ -10,7 +10,7 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/* # Cache your node_modules to speed up builds
+      - node_modules/**/* 
 
 backend:
   phases:
@@ -29,4 +29,4 @@ frontend:
         - npm start # Use the "start" script to start your Express.js server
   cache:
     paths:
-      - node_modules/**/* # Cache your node_modules for frontend builds
+      - node_modules/**/* 
