@@ -3,30 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install # or yarn install, depending on your package manager
+        - npm i
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands:
+        - npm start
   artifacts:
-    baseDirectory: . # Change this if your build output is in a different directory
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: /
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
-      - node_modules/**/* 
-
-backend:
-  phases:
-    build:
-      commands:
-        - # Add any backend build commands here (not needed for an Express.js app)
-  cache:
-    paths:
-      - node_modules/**/* # Cache your node_modules for backend builds
-
-# Start the Express.js server
-frontend:
-  phases:
-    build:
-      commands:
-        - npm start # Use the "start" script to start your Express.js server
-  cache:
-    paths:
-      - node_modules/**/* 
+      - node_modules/**/*
