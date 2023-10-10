@@ -1,17 +1,14 @@
 version: 1
-frontend:
+backend:
   phases:
-    preBuild:
-      commands:
-        - npm i
-    # IMPORTANT - Please verify your build commands
     build:
-      commands: []
+      commands:
+        - npm install # or yarn install, depending on your package manager
   artifacts:
-    # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
-    files:
-      - "**/index.js*"
+    backendDirectory: .
   cache:
     paths:
       - node_modules/**/*
+  build:
+    commands:
+      - npm start
