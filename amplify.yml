@@ -6,13 +6,12 @@ frontend:
         - npm i
     # IMPORTANT - Please verify your build commands
     build:
-      commands:
-        - npm start
+      commands: []
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
     files:
-      - "**/*"
+      - "**/index.js*"
   cache:
     paths:
       - node_modules/**/*
