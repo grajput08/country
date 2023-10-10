@@ -3,11 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm i
+        - npm ci
     # IMPORTANT - Please verify your build commands
     build:
-      commands:
-        - npm start
+      commands: []
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
