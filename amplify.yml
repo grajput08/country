@@ -6,7 +6,6 @@ frontend:
     build:
       commands: []
   artifacts:
-    # IMPORTANT - Please verify your build output directory
     baseDirectory: /
     files:
       - "**/*"
@@ -16,20 +15,11 @@ frontend:
 
 backend:
   phases:
-    preBuild:
-      commands:
-        - npm ci
-    # IMPORTANT - Please verify your build commands
     build:
-      commands: []
-    postBuild:
       commands:
-        - npm start
+        - npm i
   artifacts:
-    # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
-    files:
-      - "**/*"
+    files: "**/*"
   cache:
     paths:
       - node_modules/**/*
