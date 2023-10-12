@@ -23,3 +23,6 @@ backend:
   cache:
     paths:
       - node_modules/**/*
+   build:
+      commands:
+        - npm start
