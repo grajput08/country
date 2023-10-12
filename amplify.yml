@@ -1,12 +1,13 @@
 version: 1
-frontend:
+main:
   phases:
     preBuild:
       commands:
         - npm i
     # IMPORTANT - Please verify your build commands
     build:
-      commands: npm run dev
+      commands:
+        - npm start
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
