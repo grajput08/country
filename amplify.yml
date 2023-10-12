@@ -18,8 +18,11 @@ backend:
     build:
       commands:
         - npm i
-  artifacts:
-    files: "**/*"
+    artifacts:
+    files:
+      - amplify/backend/function/**/*
+      - amplify/backend/api/**/*
+
   cache:
     paths:
       - node_modules/**/*
