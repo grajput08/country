@@ -18,11 +18,11 @@ backend:
     build:
       commands:
         - npm i
+    postBuild:
+      commands:
+        - npm start
   artifacts:
     files: "**/*"
   cache:
     paths:
       - node_modules/**/*
-   build:
-      commands:
-        - npm start
