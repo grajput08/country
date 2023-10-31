@@ -9,7 +9,7 @@ const {
 
 router.use(apiResponseMiddleware);
 
-//define APi routes
+//define API routes
 router.get("/country", getCountry);
 router.get("/country/:id", getCountryById);
 router.post("/create/country", createCountry);
